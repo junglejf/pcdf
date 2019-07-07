@@ -1,0 +1,7 @@
+Resultados encontrados:
+
+deltaX = 0.25
+deltaT = 0.01
+k= 1 até metade da barra e k=2 na outra metade da barra
+
+A fonte de calor é ligada a cada 12 passos no tempo!
