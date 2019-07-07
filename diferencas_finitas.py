@@ -62,7 +62,7 @@ ponto_medio = int(len(passos)/2)
 
 
 
-tempo = 150
+tempo = 300
 passos_tempo = []
 for i in range(tempo):
         passos_tempo.append(i)
@@ -72,7 +72,7 @@ for i in range(tempo):
 
 tempo_atual = []
 for k in passos:
-        tempo_atual.append(10 + 280 * k - 380*k*(k-0.5))
+        tempo_atual.append(int(10 + 280 * k - 380*k*(k-0.5)))
 temperatura_no_tempo = []
 temperatura_no_tempo.append(tempo_atual)
 
@@ -86,10 +86,15 @@ for i in range(1, len(passos_tempo)):
         temperatura_atual = [10]
         for j in range(1, len(passos)-1):
                 foguinho = 0
-                if(temperatura_no_tempo[-1][ponto_medio] >= 55 and temperatura_no_tempo[-1][ponto_medio] < 150): 
-                        foguinho = 200
+                if(i>1 and temperatura_no_tempo[-2][ponto_medio] > temperatura_no_tempo[-1][ponto_medio]):
+                        if(temperatura_no_tempo[-1][ponto_medio] <= 55): 
+                                foguinho = 200
+                if(i>1 and temperatura_no_tempo[-2][ponto_medio] < temperatura_no_tempo[-1][ponto_medio]):
+                        if(temperatura_no_tempo[-1][ponto_medio] >= 155): 
+                                foguinho = 0
+                
                 gama = (deltaT*kx[j])/(deltaX*deltaX)
-                temperatura_atual.append(gama*(temperatura_no_tempo[-1][j-1] - 2*(temperatura_no_tempo[-1][j]) + (temperatura_no_tempo[-1][j+1])) + temperatura_no_tempo[-1][j] + foguinho)
+                temperatura_atual.append(int(gama*(temperatura_no_tempo[-1][j-1] - 2*(temperatura_no_tempo[-1][j]) + (temperatura_no_tempo[-1][j+1])) + temperatura_no_tempo[-1][j] + foguinho))
         temperatura_atual.append(100)
         temperatura_no_tempo.append(temperatura_atual)
 
