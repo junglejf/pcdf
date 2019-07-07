@@ -77,9 +77,9 @@ temperatura_no_tempo = []
 temperatura_no_tempo.append(tempo_atual)
 
 #Definindo agora os valores para os próximos tempos
-deltaX = 0.25
-deltaT = 0.01
 
+deltaT = 0.01
+deltaX = passos[1]
 
 ##Passos para descobrir as temperaturas em cada passo interno do dominio
 for i in range(1, len(passos_tempo)):
@@ -98,5 +98,7 @@ print('fim:\n')
 for i in range(0, len(temperatura_no_tempo)):
         print('\nEm t = ' + str(passos_tempo[i]) + ':')
         print(temperatura_no_tempo[i])
+
+#temperatura_no_tempo[i][ponto_medio]  --> plota o ponto médio
 
 

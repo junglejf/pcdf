@@ -4,4 +4,16 @@ deltaX = 0.25
 deltaT = 0.01
 k= 1 até metade da barra e k=2 na outra metade da barra
 
-A fonte de calor é ligada a cada 12 passos no tempo!
+A fonte de calor é ligada a cada 12 unidades de tempo!
+
+
+##############################
+
+
+deltaX = 0.25
+deltaT = 0.01
+k= 1 até x=0.75 e k=2 em x=1
+
+A fonte de calor é ligada a cada 14 unidades de tempo!
+
+##############################
