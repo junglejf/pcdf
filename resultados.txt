@@ -1,5 +1,10 @@
 Resultados encontrados:
 
+
+################## PRIMEIROS TESTES ###################
+############## Temperatura que liga o foguinho = 60 graus ##################
+############ Temperatura que desliga o foguinho = 150 graus ################
+
 deltaX = 0.25
 deltaT = 0.01
 k= 1 até metade da barra e k=2 na outra metade da barra
@@ -8,7 +13,7 @@ A fonte de calor é ligada no tempo 29 e a temperatura começa a subir.
 Quando chega em 76 graus, a temperatura da barra se estabiliza e ela para de subir.
 
 
-##############################
+############## TESTE 1 ################
 
 
 deltaX = 0.25
@@ -18,7 +23,7 @@ k= 1 até x=0.75 e k=2 em x=1
 A fonte de calor é ligada no tempo 33 e a temperatura começa a subir.
 Quando chega em 79,97 graus, a temperatura da barra se estabiliza e ela para de subir.
 
-##############################
+###############  TESTE 2 ###############
 
 deltaX = 0.25
 deltaT = 0.01
@@ -27,7 +32,7 @@ k= 1 na barra toda
 A fonte de calor é ligada no tempo 33 e a temperatura começa a subir.
 Quando chega em 79,97 graus, a temperatura da barra se estabiliza e ela para de subir.
 
-##############################
+###############  TESTE 3 ###############
 
 
 deltaX = 0.25
@@ -40,7 +45,67 @@ k = 1 no ponto 1
 A fonte de calor é ligada no tempo 24 e a temperatura começa a subir.
 Quando chega em 72,70 graus, a temperatura da barra se estabiliza e ela para de subir.
 
-##############################
+############## OBSERVAÇÃO ################
+
+
+Quando usamos deltaT como 0,03 e definimos 3 pontos entre as extremidades da barra o método já não fica mais estável.
+
+
+
+
+
+
+
+
+
+
+################## SEGUNDOS TESTES ###################
+############## Temperatura que liga o foguinho = 60 graus ##################
+############ Temperatura que desliga o foguinho = 74 graus ################
+
+
+################ TESTE 1 #################
+
+deltaX = 0.25
+deltaT = 0.01
+k= 1 até metade da barra e k=2 na outra metade da barra
+
+A fonte de calor é ligada no tempo 29 e a temperatura começa a subir.
+No tempo 45 a temperatura atingida é de 44 graus e o foguinho é desligado. A temperatura volta a cair. (16 unidades de tempo)
+No tempo 59 o a temperatura baixa a 60 graus e o foguinho é ligado. (14 unidades de tempo)
+No tempo 75 a temperatura atingida é de 44 graus e o foguinho é desligado. A temperatura volta a cair. (16 unidades de tempo)
+No tempo 88 o a temperatura baixa a 60 graus e o foguinho é ligado. (13 unidades de tempo)
+
+
+
+################ TESTE 2 #################
+
+deltaX = 0.25
+deltaT = 0.01
+k= 1 na barra toda
+
+A fonte de calor é ligada no tempo 33 e a temperatura começa a subir.
+No tempo 45 a temperatura atingida é de 44 graus e o foguinho é desligado. A temperatura volta a cair. (11 unidades de tempo)
+No tempo 60 o a temperatura baixa a 60 graus e o foguinho é ligado. (15 unidades de tempo)
+No tempo 74 a temperatura atingida é de 44 graus e o foguinho é desligado. A temperatura volta a cair. (14 unidades de tempo)
+No tempo 88 o a temperatura baixa a 60 graus e o foguinho é ligado. (14 unidades de tempo)
+
+
+###############  TESTE 3 ###############
+
+
+deltaX = 0.25
+deltaT = 0.01
+k = 2 nos pontos 0 e 0.25
+k = 1 no ponto 0.5
+k = 3 no ponto 0.75
+k = 1 no ponto 1
+
+A fonte de calor é ligada no tempo 24 e a temperatura começa a subir.
+Quando chega em 72,70 graus, a temperatura da barra se estabiliza e ela para de subir.
+
+
+############## OBSERVAÇÃO ################
 
 
 Quando usamos deltaT como 0,03 e definimos 3 pontos entre as extremidades da barra o método já não fica mais estável.

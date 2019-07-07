@@ -80,8 +80,10 @@ temperatura_no_tempo.append(tempo_atual)
 
 deltaT = 0.01
 deltaX = passos[1]
+
+#Temperaturas que ligam e desligam o foguinho
 temperatura_minima = 60
-temperatura_maxima = 150
+temperatura_maxima = 74
 
 ##Passos para descobrir as temperaturas em cada passo interno do dominio
 for i in range(1, len(passos_tempo)):
