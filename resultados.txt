@@ -109,3 +109,13 @@ Quando chega em 72,70 graus, a temperatura da barra se estabiliza e ela para de 
 
 
 Quando usamos deltaT como 0,03 e definimos 3 pontos entre as extremidades da barra o método já não fica mais estável.
+
+############# Casos Interessantes ###########
+
+- Manter temperatura máxima, minima, k, deltaT e variar o deltaX  <<<< >>>>> Testar gama > 0.5
+- Não atingir temperatura máxima e mínima
+- Quanto maior o valor de K melhor ou pior a propagação do calor ?
+- Aumentar/diminuir pra melhorar a visualização do gráfico
+- testar temperatura mínima 55 e verificar em que tempo o foguinho acende , por exemplo :
+temperatura_minima = 55
+temperatura_maxima = 90
